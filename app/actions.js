@@ -32,7 +32,7 @@ export async function saveNote(prevState, formData) {
         }
     }
 
-    await sleep(1000)
+    // await sleep(1000)
 
     if(noteId){
         updateNote(noteId, JSON.stringify(data))
@@ -49,7 +49,7 @@ export async function saveNote(prevState, formData) {
 
 export async function deleteNote(prevState, formData) {
     const noteId = formData.get('noteId')
-    await sleep(2000)
+    // await sleep(2000)
 
     delNote(noteId)
     // revalidatePath('/', 'layout')
